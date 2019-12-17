@@ -1,0 +1,163 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/dark_colour">
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="28dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginRight="28dp"
+    android:layout_marginBottom="5dp"
+    card_view:cardPreventCornerOverlap="false"
+    card_view:cardBackgroundColor="@color/light_colour"
+    card_view:cardCornerRadius="15dp"
+    card_view:cardElevation="18dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/fromimg1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="18dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded"
+            android:src="@drawable/from" />
+
+        <ImageView
+            android:id="@+id/dotverti1"
+            android:layout_width="22dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="37dp"
+            android:background="@color/light_colour"
+            android:baselineAlignBottom="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/threedotsverti"
+            android:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/toimg1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="72dp"
+            android:background="@drawable/roundedto"
+            android:src="@drawable/to" />
+
+        <TextView
+            android:id="@+id/fromtit1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/fromimg1"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="-4dp"
+            android:layout_toRightOf="@+id/fromimg1"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/fromsubtit1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/dotverti1"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/dotverti1"
+            android:text="Nov 24, 18:00"
+            android:textColor="@color/gray"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/totit1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/dotverti1"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="33dp"
+            android:layout_toRightOf="@+id/dotverti1"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tosubtit1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/toimg1"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="9dp"
+            android:layout_toRightOf="@+id/toimg1"
+            android:text="Nov 24, 19:35"
+            android:textColor="@color/gray"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/total1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_alignBaseline="@+id/fromtit1"
+            android:layout_marginRight="18dp"
+            android:text="Total:"
+            android:textColor="@color/gray"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/totalval1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="18dp"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/totalsymbol1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/totalval1"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="3dp"
+            android:layout_toLeftOf="@+id/totalval1"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/travtimtit1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tosubtit1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="9dp"
+            android:layout_marginRight="3dp"
+            android:layout_toLeftOf="@+id/travtimval1"
+            android:text="Travel time: "
+            android:textColor="@color/gray"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/travtimval1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tosubtit1"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="9dp"
+            android:textColor="@color/gray"
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+</LinearLayout>

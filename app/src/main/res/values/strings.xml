@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">RadiusAgent_UIApp</string>
+    <string name="app_title">Radius Agent</string>
+    <string name="app_smal_title">Formerly Known As AgentDesk</string>
+    <string name="activity_label">My Profile</string>
+</resources>
